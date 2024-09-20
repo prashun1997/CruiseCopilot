@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CruisePilot - Your Autonomous Driving Companion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            opacity: 0.8;
+        }
+
+        main {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        /* Left panel for features and maps */
+        .left-panel {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        /* Enhanced Features Section Styling */
+        .features {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+
+        .features h2 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-item:hover {
+            background-color: #e0e0e0;
+            transform: scale(1.02);
+        }
+
+        .feature-icon {
+            font-size: 30px;
+            margin-right: 15px;
+            color: #4CAF50;
+        }
+
+        .feature-text {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .maps {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            flex: 2;
+        }
+
+        .maps iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Right panel for the iframe */
+        .right-panel {
+            width: 40%;
+            height: 100%;
+        }
+
+        .right-panel iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CruisePilot</h1>
+    <p>Your Autonomous Driving Companion</p>
+</header>
+
+<main>
+    <!-- Left side panel for features and maps -->
+    <div class="left-panel">
+        <section class="features">
+            <h2>What Can You Do with CruisePilot?</h2>
+            <div class="feature-item">
+                <div class="feature-icon">🚗</div>
+                <div class="feature-text">Seamlessly navigate from point A to B with precision.</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🗺️</div>
+                <div class="feature-text">Personalize routes based on your preferences.</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🎤</div>
+                <div class="feature-text">Interact with the system through voice or text commands.</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🚦</div>
+                <div class="feature-text">Real-time traffic updates and adaptive route changes.</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">⚙️</div>
+                <div class="feature-text">Control vehicle speed, parking, and more.</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🛡️</div>
+                <div class="feature-text">Integrated safety features and automatic hazard avoidance.</div>
+            </div>
+        </section>
+
+        <section class="maps">
+            <h2>Live Map and Navigation</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126457.56607244696!2d77.6101!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae140ab3f3b9ed%3A0x501b4e200c60aa0!2sBangalore%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sus!4v1632341200000!5m2!1sen!2sus" 
+                allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </div>
+
+    <!-- Right side panel for the iframe -->
+    <div class="right-panel">
+        <!-- Embed the bot iframe -->
+        <iframe src="https://copilotstudio.preview.microsoft.com/environments/Default-d69e1e90-fbe5-4b7a-b4b4-5cd3777e2ea3/bots/cre46_copilot_R2QxVX/webchat?__version__=2" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 CruisePilot. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
